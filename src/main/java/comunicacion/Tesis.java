@@ -20,7 +20,7 @@ public class Tesis extends Escrito{
 		}
 		
 		public String getIdea() {
-			return idea;
+			return this.idea;
 		}
 		
 		public void setIdea(String idea){
@@ -28,7 +28,7 @@ public class Tesis extends Escrito{
 		}
 		
 		public String getConclusion() {
-			return conclusion;
+			return this.conclusion;
 		}
 		
 		public void setConclusion(String conclusion) {
@@ -36,7 +36,7 @@ public class Tesis extends Escrito{
 		}
 		
 		public String getReferencias() {
-			return referencias;
+			return this.referencias;
 		}
 		
 		public void setReferencia(String referencias) {
@@ -44,7 +44,7 @@ public class Tesis extends Escrito{
 		}
 		
 		public String interpretacion() {
-			return interpretacion;
+			return this.interpretacion;
 		}
 		
 		public void setInterpretacion(String interpretacion) {
