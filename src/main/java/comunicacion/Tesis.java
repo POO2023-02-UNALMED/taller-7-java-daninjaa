@@ -5,6 +5,7 @@ public class Tesis extends Escrito{
 
 		private String idea;
 		private ArrayList<String> argumentos;
+		private String[] argumentosRegular;
 		private String conclusion;
 		private String referencias;
 		private String interpretacion;
@@ -12,8 +13,9 @@ public class Tesis extends Escrito{
 		public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String interpretacion) {
 			super(origen, titulo, autor, paginas);
 			this.idea = idea;
+			this.argumentosRegular = argumentos;
 			ArrayList<String> argumentosTemporal = new ArrayList<>();
-			Collections.addAll(argumentosTemporal, argumentos);
+			Collections.addAll(argumentosTemporal, this.argumentosRegular);
 			this.argumentos = argumentosTemporal;
 			this.conclusion = conclusion;
 			this.referencias = referencias;			
@@ -26,12 +28,13 @@ public class Tesis extends Escrito{
 		public void setIdea(String idea){
 			idea = idea;
 		}
-		public int getArgumentos() {
-			return argumentos.size();
+		public String[] getArgumentos() {
+			return argumentosRegular;
 		}
 		public void setArgumentos(String[] argumentos) {
+			this.argumentosRegular = argumentos;
 			ArrayList<String> argumentosTemporal = new ArrayList<>();
-			Collections.addAll(argumentosTemporal, argumentos);
+			Collections.addAll(argumentosTemporal, this.argumentosRegular);
 		}
 		public String getConclusion() {
 			return this.conclusion;
