@@ -4,7 +4,7 @@ import java.util.Collections;
 public class Tesis extends Escrito{
 
 		private String idea;
-		static ArrayList<String> argumentos;
+		private ArrayList<String> argumentos;
 		private String conclusion;
 		private String referencias;
 		private String interpretacion;
@@ -20,13 +20,19 @@ public class Tesis extends Escrito{
 		}
 		
 		public String getIdea() {
-			return this.idea;
+			return idea;
 		}
 		
 		public void setIdea(String idea){
-			this.idea = idea;
+			idea = idea;
 		}
-		
+		public int getArgumentos() {
+			return argumentos.size();
+		}
+		public void setArgumentos(String[] argumentos) {
+			ArrayList<String> argumentosTemporal = new ArrayList<>();
+			Collections.addAll(argumentosTemporal, argumentos);
+		}
 		public String getConclusion() {
 			return this.conclusion;
 		}
