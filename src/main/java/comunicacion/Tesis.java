@@ -18,6 +18,7 @@ public class Tesis extends Escrito{
 			Collections.addAll(argumentosTemporal, this.argumentosRegular);
 			this.argumentos = argumentosTemporal;
 			this.conclusion = conclusion;
+			this.interpretacion = interpretacion;
 			this.referencias = referencias;			
 		}
 		
