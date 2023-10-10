@@ -59,7 +59,7 @@ public class Fabula extends Escrito{
 	}
 	
 	public String toString() {
-		return String.format("%s\n%s\n%s\n%s\n%s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), this.ensenanza);
+		return String.format("%s\n%s\n%s\n%i\n%s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), this.ensenanza);
 	}
 	
 	public int palabrasTotales(int palabrasPagina) {
