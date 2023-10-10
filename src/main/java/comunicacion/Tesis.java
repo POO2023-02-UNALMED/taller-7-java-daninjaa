@@ -1,5 +1,6 @@
 package comunicacion;
 import java.util.ArrayList;
+import java.util.Collections;
 public class Tesis extends Escrito{
 
 		private String idea;
@@ -8,10 +9,12 @@ public class Tesis extends Escrito{
 		private String referencias;
 		private String interpretacion;
 		
-		public Tesis(String origen, String titulo, String autor, int paginas, String idea, ArrayList<String>argumentos, String conclusion, String referencias, String interpretacion) {
+		public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String interpretacion) {
 			super(origen, titulo, autor, paginas);
 			this.idea = idea;
-			this.argumentos = argumentos;
+			ArrayList<String> argumentosTemporal = new ArrayList<>();
+			Collections.addAll(argumentosTemporal, argumentos)
+			this.argumentos = argumentosTemporal;
 			this.conclusion = conclusion;
 			this.referencias = referencias;			
 		}
