@@ -16,7 +16,7 @@ public class Periodico extends Escrito{
 		return fecha;
 	}
 	
-	public void setFecha() {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 	
@@ -24,7 +24,7 @@ public class Periodico extends Escrito{
 		return primicia;
 	}
 	
-	public void setPrimicia() {
+	public void setPrimicia(String primicia) {
 		this.primicia = primicia;
 	}
 	
@@ -32,7 +32,7 @@ public class Periodico extends Escrito{
 		return interpretacion;
 	}
 	
-	public void setInterpretacion() {
+	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
 	

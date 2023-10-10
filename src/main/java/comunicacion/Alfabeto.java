@@ -17,7 +17,7 @@ public class Alfabeto extends Pictograma {
 	public String interpretacion() {
 		return interpretacion;
 	}
-	public void setInterpretacion() {
+	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
 	

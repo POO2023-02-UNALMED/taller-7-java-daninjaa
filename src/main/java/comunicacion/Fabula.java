@@ -15,7 +15,7 @@ public class Fabula extends Escrito{
 		return ensenanza;
 	}
 	
-	public void setEnsenanza() {
+	public void setEnsenanza(String ensenanza) {
 		this.ensenanza = ensenanza;
 	}
 	
@@ -23,7 +23,7 @@ public class Fabula extends Escrito{
 		return interpretacion;
 	}
 	
-	public void setInterpretacion() {
+	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
 	

@@ -19,7 +19,7 @@ public class Libro extends Escrito{
 		return co_autor;
 	}
 	
-	public void setCoa_autor() {
+	public void setCoa_autor(String co_autor) {
 		this.co_autor = co_autor;
 	}
 	
@@ -27,7 +27,7 @@ public class Libro extends Escrito{
 		return editorial;
 	}
 	
-	public void setEditorial() {
+	public void setEditorial(String editorial) {
 		this.editorial = editorial;
 	}
 	
@@ -35,14 +35,14 @@ public class Libro extends Escrito{
 		return edicion;
 	}
 	
-	public void setEdicion() {
+	public void setEdicion(String edicion) {
 		this.edicion = edicion;
 	}
 	public String interpretacion() {
 		return interpretacion;
 	}
 	
-	public void setInterpretacion() {
+	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
 	
