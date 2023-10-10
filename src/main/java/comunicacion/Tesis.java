@@ -13,7 +13,7 @@ public class Tesis extends Escrito{
 			super(origen, titulo, autor, paginas);
 			this.idea = idea;
 			ArrayList<String> argumentosTemporal = new ArrayList<>();
-			Collections.addAll(argumentosTemporal, argumentos)
+			Collections.addAll(argumentosTemporal, argumentos);
 			this.argumentos = argumentosTemporal;
 			this.conclusion = conclusion;
 			this.referencias = referencias;			
